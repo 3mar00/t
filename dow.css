@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Tajawal&display=swap');
+*{
+    font-family: 'Tajawal', sans-serif;
+    margin:0;
+}
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    background:#004746
+}
+.all{
+    background:#004746;
+
+    position:relative;
+    height:min-content;
+    margin:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.g{
+    position:relative;
+    background: #212121;
+ display:flex;
+ overflow:hidden;
+}
+
+.all div{
+
+    width:90%;
+    display:flex;
+    justify-content:end;
+    flex-direction:row;
+    background:#997729;
+    height:min-content;
+    margin:20px;
+    border-radius:4px;
+    align-items:center;
+
+}
+.g::before{
+
+content:'';
+position:absolute;
+width:12px;
+height: 200%;
+top:-80px;
+left:50%;
+background:linear-gradient(to top, #f00, #0f0);
+animation: o 3s linear infinite;
+
+}
+
+.email,.pass{
+
+background:none;
+border:none;
+outline:none;
+font-size:30px;
+text-align:end;
+
+}
+
+.bott{
+
+margin:20px;
+font-size:20px;
+padding:10px;
+border-radius:4px;
+border:none;
+background:#00ADAB;
+transition:1s;
+
+}
+
+.passi{
+
+    width:25px;
+    height:25px;
+}
+
+.logo{
+
+    width:100%;
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.logo div{
+
+    display:flex;
+    align-items:center;
+    font-family: 'Monoton', cursive;
+    color:#997729;
+    font-size:30px;
+}
+
+form{
+
+    width:min-content;
+    display:flex;
+    justify-content:center;
+
+}
+
+.im{
+
+    width:50px;
+    height:50px;
+}
+.l, .s{
+
+    margin:4px;
+    width:40px;
+    height:40px;
+    filter: invert(39%) sepia(66%) saturate(350%);
+}
+
+::placeholder{
+
+    color:#fff;
+
+}
+.bott:hover{
+    background:#FFC745;
+    color:#fff;
+    box-shadow: 
+     0 0 10PX #FFC745,
+     0 0 30PX #FFC745,
+     0 0 60PX #FFC745;
+    
+    ;
+}
+@keyframes o {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
