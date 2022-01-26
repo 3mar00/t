@@ -95,7 +95,7 @@ transition:1s;
     align-items:center;
 
 }
-.logo div{
+.logo div,p{
 
     display:flex;
     align-items:center;
@@ -147,4 +147,26 @@ form{
     100%{
         transform: rotate(360deg);
     }
+}
+@media (min-width: 0px) and (max-width: 720px) {
+.l,.s{
+    width:80px;
+    height:80px;
+}
+    input{
+width:350px;
+}
+.im{
+    width:90px;
+    height:90px;
+}
+.bott{
+    width:min-content;
+}
+p{
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
 }
