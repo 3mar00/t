@@ -90,9 +90,12 @@ body {
 // })
 
  let a = new XMLHttpRequest();
-a.open('GET','https://www.tiktok.com/@oadjgkdfkjfkdkfsdmr');
+a.open('GET','https://www.tiktok.com/@omar');
 a.onload = () => {
+    if(a.readystate == 4 && a.status == 200){
     console.log(a.response)
+    }else if(a.status != 200){
+    console.log('error not found')}
 }
 a.send()
     </script>
