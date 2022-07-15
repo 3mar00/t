@@ -4,41 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dow.css">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+                font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+        }
+        .stop{
+            position: fixed;background:#f00;
+            padding: 10px;
+            border-radius: 4px;
+            width: max-content;
+            cursor: pointer;
+            right: 10px;
+            bottom: 10px;
+        }
+
+a.link {
+    padding: 10px;
+    background: #0f0;
+    margin: 10px;
+    border-radius: 3px;
+    color: #fff;
+
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+    </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="lis.png" alt="فشل تحميلالصوره" class="l">
+    <script src="jqmy.js"></script>
+    <!-- <div class  =  'stop'style="
+        display: flex;
+        width: max-content;
+        background: #0f0;
+        padding: 12px;
+        font-family: system-ui;
+        padding-top: 1px;
+        color: #fff;
+        font-size: 100px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        transform: rotate(90deg);
+        margin: 133px;
+    ">:)</div> -->
+    <div class="stop">stop</div>
+    <script>
+        console.log(fetch( 'https://', { mode: 'cors' } ))
+       let ele = document.createElement( 'a' )
+       ele.className = 'link';
+       ele.target = '_blank'
+       
+        let timeee  = setInterval(() => {
+            texttt = get(3)
+            ele.href = `https://www.tiktok.com/@${texttt}`
+            ele.onclick  = a  => {
+                console.log(a)
+            }
+            ele.innerHTML = texttt;
+            document.body.appendChild(ele.cloneNode(true))
+        }, 500);
 
-        <div class="n">
-        <p>OMAR SALAMA</p>
-        <img src="logo.png" alt="فشل تحميلالصوره" class="im">
-        </div>
+        // fetch('https://www.tiktok.com/@76i?lang=ar')
+        
+        
+        function get (num = 0) {
+    let array = ['0','1','2','3','4','5','6','7','8','9', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's' ,'d', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c','v','b','n','m','.','_'];
+    let text = '';
+for(let i = 0; i < num; i++){
+    text += array[ Math.floor( Math.random() * 38 ) ]
+}
+return text;
+}
+$('.stop').on('click', a => {
+    clearInterval(timeee)
+})
 
-        <img src="w.png" alt="فشل تحميلالصوره" class="s">
-    </div>
-
-
-    <form action="php">
-        <div class="g">
-        <div class="all">
-        <div >
-            <input class="email" type="text"placeholder="البريد الالكتروني">
-        </div>
-
-        <div >
-            <input class="pass" type="text" placeholder="كلمة المرور">
-            <img class="passi" src="view.png" alt="">
-        </div>
-
-
-            <input class="bott" type="button" value="تسجيل الدخول">
-
-    </div>
-</div>
-
-    </form>
+         let a = new XMLHttpRequest();
+a.open('GET','https://www.tiktok.com/@oadjgkdfkjfkdkfsdmr');
+a.onload = () => {
+    console.log(a.response)
+}
+a.send()
+    </script>
 </body>
-
 </html>
