@@ -59,37 +59,37 @@ body {
     ">:)</div> -->
     <div class="stop">stop</div>
     <script>
-        console.log(fetch( 'https://', { mode: 'cors' } ))
-       let ele = document.createElement( 'a' )
-       ele.className = 'link';
-       ele.target = '_blank'
+//         console.log(fetch( 'https://', { mode: 'cors' } ))
+//        let ele = document.createElement( 'a' )
+//        ele.className = 'link';
+//        ele.target = '_blank'
        
-        let timeee  = setInterval(() => {
-            texttt = get(3)
-            ele.href = `https://www.tiktok.com/@${texttt}`
-            ele.onclick  = a  => {
-                console.log(a)
-            }
-            ele.innerHTML = texttt;
-            document.body.appendChild(ele.cloneNode(true))
-        }, 500);
+//         let timeee  = setInterval(() => {
+//             texttt = get(3)
+//             ele.href = `https://www.tiktok.com/@${texttt}`
+//             ele.onclick  = a  => {
+//                 console.log(a)
+//             }
+//             ele.innerHTML = texttt;
+//             document.body.appendChild(ele.cloneNode(true))
+//         }, 500);
 
-        // fetch('https://www.tiktok.com/@76i?lang=ar')
+//         // fetch('https://www.tiktok.com/@76i?lang=ar')
         
         
-        function get (num = 0) {
-    let array = ['0','1','2','3','4','5','6','7','8','9', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's' ,'d', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c','v','b','n','m','.','_'];
-    let text = '';
-for(let i = 0; i < num; i++){
-    text += array[ Math.floor( Math.random() * 38 ) ]
-}
-return text;
-}
-$('.stop').on('click', a => {
-    clearInterval(timeee)
-})
+//         function get (num = 0) {
+//     let array = ['0','1','2','3','4','5','6','7','8','9', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's' ,'d', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c','v','b','n','m','.','_'];
+//     let text = '';
+// for(let i = 0; i < num; i++){
+//     text += array[ Math.floor( Math.random() * 38 ) ]
+// }
+// return text;
+// }
+// $('.stop').on('click', a => {
+//     clearInterval(timeee)
+// })
 
-         let a = new XMLHttpRequest();
+ let a = new XMLHttpRequest();
 a.open('GET','https://www.tiktok.com/@oadjgkdfkjfkdkfsdmr');
 a.onload = () => {
     console.log(a.response)
